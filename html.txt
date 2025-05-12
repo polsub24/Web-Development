@@ -1,0 +1,5 @@
+<h1> to <h6>: These tags are used to create different levels of headings - h1 is the biggest and h6 is the smallest one
+
+<a>: This tag is used for hyperlinks.
+
+<img>: This is used to embed images in the webpage.
