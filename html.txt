@@ -1,5 +1,12 @@
 <h1> to <h6>: These tags are used to create different levels of headings - h1 is the biggest and h6 is the smallest one
-
 <a>: This tag is used for hyperlinks.
-
 <img>: This is used to embed images in the webpage.
+<!DOCTYPE html>: Identifies the document as an HTML5 document.
+<html>: Encloses the HTML document.
+<head>: Contains meta-information about the HTML document
+<title>: The content within the title tag is used as the page title. Present inside the head section.
+<body>: Hosts the content visible to web users — text, images, links, etc.
+
+<!-- text --> is the comment syntax in HTML.
+<a href="https://www.example.com">Visit Example.com</a> : To specify the link's destination.
+<img src="https://codesignal-staging-assets.s3.amazonaws.com/uploads/1702500465136/html-placeholder1.png" alt="Stunning View">
