@@ -10,3 +10,22 @@
 <!-- text --> is the comment syntax in HTML.
 <a href="https://www.example.com">Visit Example.com</a> : To specify the link's destination.
 <img src="https://codesignal-staging-assets.s3.amazonaws.com/uploads/1702500465136/html-placeholder1.png" alt="Stunning View">
+
+<ul> tag signifies the list, and the <li> tag encloses each item.
+<ul> for bulleted list
+<ol> for numbered list
+Nesting list also possible
+In HTML, tables use the <table> tag. The <tr> tag facilities new rows, and <td> is for cells within the rows. Headers use the <th> tag.
+
+Commands:-
+<b> makes text bold.
+<i> italicizes text.
+<u> underlines text.
+<s> strikes through text.
+<br> inserts a line break.
+<hr> draws a horizontal line.   
+&lt; for <
+&gt; for >
+&amp; for &
+&deg; for °
+&copy; for ©
