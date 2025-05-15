@@ -1,0 +1,60 @@
+h1 { 
+  color: blue; 
+  font-size: 12px; 
+} It makes all the h1 elements color blue and the font size 12px.
+
+
+Types on Applying css:
+1) Inline CSS: We use the style attribute.
+   Eg:- <h1 style="color:blue;">A Blue Heading</h1> -- element selector
+
+2) Internal CSS: CSS Present in the style tag of the head section.
+   Eg:- 
+   <head>
+  <style>
+    h1 {color: red;}
+    p {color: blue;}
+  </style>
+   </head>
+
+3) External CSS: We link separate .css file for large projects.
+   Eg:- In HTML
+   <head>
+    <link rel="stylesheet" href="styles.css">
+   </head>
+        In CSS
+    h1 {color: red;}
+    p {color: blue;}
+
+
+Class Selector:- 
+In CSS - 
+.important-text {
+  color: red;
+  font-style: italic; /* makes the text italic */
+}
+In HTML -
+<p class="important-text">This text is considered important!</p>
+
+Id Selector:-
+In CSS -
+#special-text {
+  color: red;
+}
+In HTML -
+<p id="special-text">This text is unique and hence, red!</p>
+
+1) div: This is a block-level element.  - This occupies the whole row.
+Eg:-
+<body>
+  <div style="background-color:yellow;">
+    <h2>This is a heading inside a div element</h2>
+    <p>This is a paragraph inside a div element.</p>
+  </div>
+</body>
+Colours the whole row of h2 and p yellow.
+
+2) span: This is an inline element. - This occupies only the rquired area.
+Eg:-
+<p>My mother has <span style="color:blue;">blue</span> eyes.</p>
+
