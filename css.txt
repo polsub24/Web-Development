@@ -58,3 +58,71 @@ Colours the whole row of h2 and p yellow.
 Eg:-
 <p>My mother has <span style="color:blue;">blue</span> eyes.</p>
 
+Models:-
+1) CSS Box Model 
+  Eg- <p style="border: 1px solid black; padding: 20px; margin: 30px;">Hello, World!</p>
+
+2) Flexbox - we can control how elements inside a box align and order themselves.
+  Eg-
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex_demo {
+  display: flex; /* apply flexbox */
+  justify-content: space-around; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+}
+.flex_demo > div {
+  background-color: lightblue;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex_demo">
+  <div>I love</div> 
+  <div>Flexbox</div> 
+  <div>Layout!</div> 
+</div>
+
+</body>
+</html>
+
+The > combinator selects elements that are direct children of a specified element. In this example, .flex_demo > 
+div selects all div elements that are direct children of the element with the flex_demo class.
+
+3) Grid - It makes complex designs simple, letting us quickly decide what goes in which row or column.
+  Eg-<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid_demo {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid_demo > div {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid_demo"> 
+  <div>I</div>
+  <div>love</div>
+  <div>Grid</div>
+  <div>Layout!</div>
+</div>
+
+</body>
+</html>
+
+
+
