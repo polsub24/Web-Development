@@ -1,0 +1,34 @@
+<style>
+  /* These styles illustrate four positioning types in CSS */
+
+  .static {
+    position: static;  /* No positioning adjustments */
+    border: 3px solid #4AFF82;
+  }
+
+  .relative {
+    position: relative;  /* Move element from normal position */
+    top: 30px;  /* Pushes the box 30px down from its original position */
+    left: 20px;  /* Pushes the box 20px to the right of its original place */
+    border: 3px solid #F98404;
+  }
+
+  .absolute {
+    position: absolute;  /* Position relative to nearest positioned ancestor */
+    top: 60px;  /* Positions the box 60px from the top edge of its nearest positioned ancestor */
+    right: 0;  /* Positions the box at the right edge of the nearest positioned ancestor */
+    border: 3px solid #0275D8;
+  }
+
+  .fixed {
+    position: fixed;  /* Element fixed in the viewport */
+    bottom: 0;  /* Positions the box at the very bottom */
+    border: 3px solid #7034A3;
+  }
+</style>
+
+<!-- Our HTML elements with different positioning types -->
+<div class="static">Static</div>
+<div class="relative">Relative</div>
+<div class="absolute">Absolute</div>
+<div class="fixed">Fixed</div>

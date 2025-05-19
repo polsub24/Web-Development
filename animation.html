@@ -1,0 +1,22 @@
+/* animation: <animation-name> <animation-duration> <animation-timing-function> <animation-iteration-count> */
+/* iteration can be infinite for endless loops of the animation */
+<style>
+  @keyframes moving-box {
+    /* At the start, the box is at the left */
+    0% {left: 0px;}
+    /* At the halfway point, the box moves to the right */
+    50% {left: 200px;}
+    /* In the end, the box returns to the left */
+    100% {left: 0px;}
+  }
+  
+  .box {
+    position: relative;  /* So we can use 'left' property */
+    height: 50px;  /* Box height */
+    width: 50px;  /* Box width */
+    background-color: #4CAF50;  /* Box color */
+    animation: moving-box 2s linear infinite;  /* Adding the animation */
+  }
+</style>
+
+<div class="box"></div> <!-- Here's our animated box -->

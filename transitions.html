@@ -1,0 +1,28 @@
+/*transition: <transition-property> <transition-duration> <transition-timing-function></transition-timing-function>*/
+/*
+The timing function can have the following values:
+
+'ease' (starts slow, increases speed, then ends slow)
+'linear' (equal speed)
+'ease-in' (starts slow)
+'ease-out' (ends slow)
+'ease-in-out' (starts slow and ends slow).
+*/
+
+<style>
+  /* This class produces a smooth color transition on hover */
+
+  .button {
+    background-color: #4CAF50;  /* Start color */
+    transition: background-color 0.5s ease;  /* Transition rule */
+    padding: 15px;
+    border: none;  /* removes the border from the element */
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #45a049;  /* End color on mouse hover */
+  }
+</style>
+
+<button class="button">Hover over me</button> <!-- Hover over this button to see transition -->
