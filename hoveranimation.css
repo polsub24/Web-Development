@@ -1,0 +1,12 @@
+.subscribe-button {
+  position: relative;
+  padding: 10px;
+  color: #FFF;
+  background-color: #0275D8; /* Start color */
+  border: 2px solid #4AFF82;
+  transition: background-color 1s linear;
+}
+
+.subscribe-button:hover{
+  background-color: black;
+}
