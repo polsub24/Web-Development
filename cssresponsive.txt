@@ -1,0 +1,22 @@
+For media Queries:-
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; 
+    /* If the above condition is met, the background color of the page changes to lightblue */
+  }
+}
+screen is the  media type and max-width is the media feature
+
+
+The best approach is Mobile-first approach for css in responsive web design
+like:-
+
+.column {
+  width: 100%; /* Default CSS rules for the smallest screens, e.g., mobile phones */
+}
+@media screen and (min-width: 600px) {
+  .column {
+    width: 30%;
+    float: left;
+  }
+}
