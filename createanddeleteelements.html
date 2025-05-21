@@ -1,0 +1,16 @@
+<button onclick="createPara()">Create a paragraph</button>
+<button onclick="removePara()">Remove the paragraph</button>
+<div id="myDiv"></div>
+<script>
+function createPara() {
+  let para = document.createElement("P");                 
+  let t = document.createTextNode("This is a paragraph.");    
+  para.appendChild(t); // using appendChild to insert the created text node into the paragraph
+  document.getElementById("myDiv").appendChild(para); // appending the paragraph to the existing div
+}
+function removePara() {
+  let parent = document.getElementById("myDiv");
+  let child = parent.getElementsByTagName("P")[0];
+  parent.removeChild(child); // removing the paragraph from the div
+}
+</script>

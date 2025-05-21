@@ -1,0 +1,34 @@
+<script src="myscript.js"></script> 
+for linking html to javascript file
+
+Inline script tags:-
+<script> 
+  // Changing the paragraph text
+    document.getElementById("demo").innerHTML = "Hello, there!";
+</script> 
+
+DOM = Document Object Model
+DOM Manipulation acheived by JS:-
+1) document.getElementById(id)
+2) document.getElementsByTagName(name): It selects all elements that share a specified tag name, such as all paragraphs (<p>).
+3) document.getElementsByClassName(name): This function retrieves all elements having the provided class name.
+4) document.querySelector(selector): Just as you pick out your favorite fruit from a basket, it selects the first element that matches the supplied CSS selector.
+
+TagName and ClassName return an array of elements.
+You can change any CSS property of an element using element.style.property.
+
+Adding or removing classes: 
+add a new class to an element with element.classList.add('className')
+remove a class with element.classList.remove('className')
+
+Setting or getting attributes:
+change any attribute of an element using element.setAttribute('attrName', 'attrValue') 
+retrieve it with element.getAttribute('attrName')
+
+Event handling: With a reference to an element, attach an event listener that will execute a specified function when the event occurs, 
+using syntax like element.addEventListener('click', function). 
+**When adding an event, the function does not require () like onclick. 
+
+Creation and deletion of elements: 
+document.createElement('tagName') to create an element 
+element.removeChild(childElement) to remove a child element.

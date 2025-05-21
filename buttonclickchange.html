@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="title">Hello World!</h1>
+    <button onclick="changeTitle()">Transform title</button>
+    <script>
+      function changeTitle() {
+        // Selects the 'title' element
+        let titleElement = document.getElementById('title');
+        // Changes the element's content and color
+        titleElement.innerHTML = 'Hello JavaScript!';
+        titleElement.style.color = 'red';
+      }
+    </script>
+  </body>
+</html>
