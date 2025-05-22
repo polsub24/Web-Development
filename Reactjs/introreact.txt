@@ -1,0 +1,39 @@
+In react info is saved in JSX(Javascript XML) format which is a combination of JS and HTML referred to as Virtual DOM.
+Eg:-
+let name = 'John Doe';
+const element = <h1>Hello, World!</h1>;
+
+let a = 10;
+let b = 20;
+const sumElement = <h1>The sum is: {a + b}</h1>;
+
+Some HTML attributes clash with reserved JavaScript keywords (like class attribute)
+So, we write JSX in camelCase instead of kebab-cased i.e in spaces or hypens we join the words and capitalize the letter of next word except first word.
+
+Display JSX Elements:-
+In modern React applications, we use the createRoot function from the react-dom/client package 
+to render or display a JSX element onto the webpage.
+
+createRoot() requires a DOM element (usually a div with an id of root) as its argument. 
+Once you have a root, you can call its .render() method to render your JSX element.
+Eg:-
+
+<!DOCTYPE html>
+<html lang="en"> <!-- This defines the language of this document as English -->
+  <head>
+    <meta charset="utf-8"> <!-- This specifies the character encoding for the HTML document -->
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script> <!-- index.jsx is the file where we write JSX code -->
+  </body>
+</html>
+
+
+
+import { createRoot } from 'react-dom/client'; // This imports the createRoot function for manipulating the DOM
+let name = 'John Doe';
+const element = <h1>Hello, {name}</h1>;
+const root = createRoot(document.getElementById('root'));
+root.render(element);
