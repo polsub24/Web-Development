@@ -1,0 +1,73 @@
+// This is a functional component called Greeting
+function Greeting() {
+  return <h1>Hello, JavaScript!</h1>; 
+}
+
+import React from 'react'; // importing React to use React.Component;
+
+// Defining Greeting as a class component
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, JavaScript!</h1>; 
+  }
+}
+
+import { createRoot } from 'react-dom/client';
+
+const root = createRoot(document.getElementById('root'));
+root.render(<Greeting />);
+
+index.JSX
+import { createRoot } from 'react-dom/client';
+import App from './App';  // Here we're importing the App component from the App.jsx file
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+
+App.jsx
+// This is our main or App component
+function App() {
+  return (
+    <div>
+      <h1>Welcome to React.js!</h1>
+    </div>
+  );
+}
+
+export default App;  
+
+Prop(Properties)
+// This is a functional component called Greeting
+function Greeting(props) {  // props is an object containing properties passed down from a parent component
+  const greeting = {
+    'English': 'Hello',
+    'Spanish': 'Hola',
+    'French': 'Bonjour'
+  };
+
+  return <h1>{greeting[props.language]}, {props.name}!</h1>; 
+}
+
+// We are passing the props 'name' as 'JavaScript' and 'language' as 'English'
+import { createRoot } from 'react-dom/client';
+
+const root = createRoot(document.getElementById('root'));
+root.render(<Greeting name="JavaScript" language="English" />);
+
+ES6 Destructuring
+// This is a functional component called Greeting with props destructured
+function Greeting({name, language}) {  // destructuring props directly in the function's parameters
+  const greeting = {
+    'English': 'Hello',
+    'Spanish': 'Hola',
+    'French': 'Bonjour'
+  };
+
+  return <h1>{greeting[language]}, {name}!</h1>; 
+}
+
+// We are passing the props 'name' as 'JavaScript' and 'language' as 'English'
+import { createRoot } from 'react-dom/client';
+
+const root = createRoot(document.getElementById('root'));
+root.render(<Greeting name="JavaScript" language="English" />);
