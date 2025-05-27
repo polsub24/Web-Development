@@ -54,7 +54,7 @@ import { createRoot } from 'react-dom/client';
 const root = createRoot(document.getElementById('root'));
 root.render(<Greeting name="JavaScript" language="English" />);
 
-ES6 Destructuring
+ES6 Destructuring:-
 // This is a functional component called Greeting with props destructured
 function Greeting({name, language}) {  // destructuring props directly in the function's parameters
   const greeting = {
