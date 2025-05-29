@@ -71,3 +71,55 @@ import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.getElementById('root'));
 root.render(<Greeting name="JavaScript" language="English" />);
+
+
+UseState hook:-
+const [score, setScore] = useState(0);
+
+Using it with Event Listeners:
+import { useState } from 'react';
+
+function ColorChanger() {
+  const [color, setColor] = useState('red');
+
+  return (
+    <div 
+      style={{ backgroundColor: color, height: '200px', width: '200px'}}
+      onMouseOver={() => setColor('blue')}
+      onMouseOut={() => setColor('red')}>
+    </div>
+  );
+}
+
+export default ColorChanger;
+
+
+Using with complex datatypes:
+import { useState } from 'react';
+
+function ProfileUpdater() { 
+  // creating a state variable profile with two properties
+  const [profile, setProfile] = useState({name: "John", age: 25});
+
+  const handleBirthday = () => {
+    // updating age while keeping the name the same
+    setProfile(currentProfile => ({...currentProfile, age: currentProfile.age + 1}));
+  };
+
+  return (
+    <div>
+      <h2>Name: {profile.name}</h2>
+      <h2>Age: {profile.age}</h2>
+      <button onClick={handleBirthday}>Happy Birthday!</button>
+    </div>
+  );
+}
+
+export default ProfileUpdater;
+
+when the 'Happy Birthday!' button is clicked, the handleBirthday function is called, which updates the age property of profile while leaving the name property the same.
+
+
+
+
+
