@@ -1,0 +1,16 @@
+{
+  "name": "chatbot-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd ../client && npm install && npm run build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type": "module"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

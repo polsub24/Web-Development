@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chatbot-app
+    env: node
+    buildCommand: cd server && npm install && npm run heroku-postbuild
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
